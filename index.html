@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gninoo's Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="portfolio.js">
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="logo">Gninoo</div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi !!! ,I'm Benzerga ,a Web designer. Let me show you some of my works.</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+               
+                <h3>Calculator</h3>
+                <p>A simple Calculator inspired by the Iphone calculator.</p>
+                <a href="https://gninooo.github.io/Calculator/" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                
+                <h3>Youtube Clone</h3>
+                <p>Check out this Clone of YouTube tht i built only with HTML and CSS.</p>
+                <a href="https://gninooo.github.io/YouTube-clone/" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                
+                <h3>Galery</h3>
+                <p>Here you can take a look at some pictures of my journey in Canada.</p>
+                <a href="https://gninooo.github.io/Gallery/" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'am Benzerga Mohamed Amen Eddine, here you can find some exemples about my skills in Web Designing.</p>
+        <p>My objective is to reinforce my experience so i can build more advanced Websites. </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Gninoo. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">GitHub</a>
+            <a href="https://x.com/Moha_Gninoo" target="_blank">X</a>
+
+
+        </div>
+    </footer>
+    <script src="portfolio.js"></script>
+</body>
+</html>
