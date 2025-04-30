@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+.nav-bar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #2c2c2c, #1a1a1a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+.nav-bar .header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-bar .logo {
+    width: 50px;
+    height: 50px;
+    background-color: #666;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+.nav-bar h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 20px;
+}
+.gallery {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.gallery-item {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-item:last-child {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-item:last-child img {
+    width: 50%;
+}
+.gallery-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    opacity: 1;
+    transition: transform 0.3s ease;
+}
+.gallery-item:hover img {
+    transform: scale(1.02);
+}
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 300;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.gallery-item:hover .caption {
+    opacity: 1;
+}
+.spacer {
+    height: 67px;
+}
+@media (max-width: 800px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    .gallery-item:last-child {
+        grid-column: auto;
+    }
+    .gallery-item:last-child img {
+        width: 100%;
+    }
+    .gallery-item img {
+        height: 300px;
+    }
+    .nav-bar {
+        padding: 15px 20px;
+    }
+    .nav-bar h1 {
+        font-size: 1.6rem;
+    }
+    .nav-bar .logo {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    .nav-bar .header-content {
+        gap: 15px;
+    }
+}
